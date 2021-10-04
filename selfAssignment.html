@@ -4,116 +4,143 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Card Layout </title>
+    <title>Web Page Layout</title>
     <style>
-        *{
-            padding: 0;
-             margin: 0;
-             box-sizing: border-box; 
-        }
-        #container{
-            display: inline-flex;
-            margin-top: 50px;
-           margin-left:50px;
-           
-        }
-    .box{
-        width: 300px;
-        height: 400px;
-        border: 2px solid green;
-        padding: 20px;
-        margin-right :20px;
-        margin-bottom: 10px;
-        overflow: hidden;
-        text-align: justify;
-    }
-    #box1{
-        background-color: white;
-       
-    }
-    #box2{
-        background-color:white;
-    }
-    #box3{
-        background-color: rgb(255, 254, 254);
-    }
-    #box4{
-        background-color: white;
-    }
-
-    .box img{
+       *{
+            margin: 0;
+            padding:0;
+            box-sizing: border-box;
+       }
+       .box1{
+           width: 100%;
+           height: 100px;
+           padding-top: 50px;
+           text-align: center;
+           background-color: gray;
+           font-size: 32px;
+       }
+       .box2{
         width: 100%;
-        height: 150px;
-        border-radius: 20px;
-    }
-    .box h2{
-        text-align: center;
-        margin: 10px;
-        
-    }
-    .mybutton{
-        display:block;
-        background-color: rgb(243, 20, 20);
-        border-radius: 10px;
-        color: white;
-        padding: 10,20px;
-        margin-top: 10px;
-        text-decoration: none;
-        font-family: Arial, Helvetica, sans-serif;
-    }
-    .mybutton:hover{
-        background-color: blue;
-      
-    }
+           height: 400px;
+           padding-top: 200px;
+           text-align: center;
+           background-color: lightblue; 
+           margin-top: 10px;
+           font-size: 32px;
+       }
+       .box3{
+           display:inline-flex;
+           margin-left: 400px;
+       }
+       .box30 img{
+            width: 200px;
+            height:200px;
+           
+            padding-right:50px;
+            
+       }
+       .box4{
+           width: 400px;
+           height:300px;
+           background-color: lightblue;
+           margin-right:10px;
+           text-align: center;
+           padding-top: 140px;
+           
+       }
+       .box31{
+           display: inline-flex;
+       }
+       
+       .box50{
+           background-color: yellow;
+           width:1200px;
+           height:80px;
+           margin-bottom: 30px;
+       }
+       .box6{
+           display: inline-flex;
+           margin-left: 400px;
+       }
+       .box60 img{
+            width: 200px;
+            height:400px;
+           
+            padding-right:50px;
+            
+       }
+       .box7{
+           background-color: gray;
+           width: 100%;
+           height: 100px;
+           text-align: center;
+           border: 2px solid green;
+           padding-top: 40px;
+           font-size: 32px;
+       }
+       
+
     </style>
-    
 </head>
 <body>
-    <h1 style="text-align:center;">CREATE FOLLOWING LAYOUT USING CSS  LAYOUT PROPERTIES</h1>
-<div id="container">
-    <div class="box" id="box1">
-       <div class="Images-heading">
-            <img src="./Images/html-6.png" alt=""> 
-        </div> 
-      <h2>Introduction to html</h2>
-      <p> assumenda nihil laboriosam maxime suscipit ut voluptas praesentium id accusantium ducimus deleniti architecto illum, quos dolor reprehenderit debitis voluptatibus rerum. Itaque, aliquid! Nulla, impedit!</p>
-      <div class="Images" style="text-align: center ;font-size: 20px;">
-         <a href="www.google.com"  class="mybutton" >Read More</a>
-       </div>
-    </div>
-
-    <div class="box" id="box2">
-        <div class="Images-heading">
-             <img src="./Images/css-6.png" alt=""> 
-         </div> 
-       <h2>Introduction to CSS</h2>
-       <p> assumenda nihil laboriosam maxime suscipit ut voluptas praesentium id accusantium ducimus deleniti architecto illum, quos dolor reprehenderit debitis voluptatibus rerum. Itaque, aliquid! Nulla, impedit!</p>
-       <div class="Images" style="text-align: center; font-size: 20px;">
-          <a href="www.google.com"  class="mybutton" >Read More</a>
-        </div>
-     </div>
-
-     <div class="box" id="box3">
-       <div class="Images-heading">
-            <img src="./Images/jQuery-6.png" alt=""> 
-        </div> 
-      <h2>Introduction to JavaScript</h2>
-      <p> nihil laboriosam maxime suscipit ut voluptas praesentium id accusantium ducimus deleniti architecto illum, quos dolor reprehenderit debitis voluptatibus rerum. Itaque, aliquid! Nulla, impedit!</p>
-      <div class="Images" style="text-align: center;font-size: 20px;">
-         <a href="www.google.com"  class="mybutton" >Read More</a>
-       </div>
-    </div>
-    <div class="box" id="box4">
-        <div class="Images-heading">
-             <img src="./Images/bootstrap-6.png" alt=""> 
-         </div> 
-       <h2>Introduction to Bootstrap</h2>
-       <p>assumenda nihil laboriosam maxime suscipit ut voluptas praesentium id accusantium ducimus deleniti architecto illum, quos dolor reprehenderit debitis voluptatibus rerum. Itaque, aliquid! Nulla, impedit!</p>
-       <div class="Images" style="text-align: center; font-size: 20px;">
-          <a href="www.google.com"  class="mybutton" >Read More</a>
-        </div>
-     </div>
     
-</div>
+    <div class="container">
+        <div class="box1">
+            <p >Header</p>
+        </div>
+        <div class="box2">
+            <p>Baneer</p>
+        </div>
+        <h1 style="padding-bottom: 30px;padding-top: 20; text-align: center;">Section-1</h1>
+        <div class="box3" >
+            <div class="box30">
+            <img src="./Images/redcircle.png">
+            </div>
+            <div class="box30">
+            <img src="./Images/redcircle.png">
+            </div>
+            <div class="box30">
+            <img src="./Images/redcircle.png">
+            </div>
+            <div class="box30">
+            <img src="./Images/redcircle.png">
+            </div>
+        </div>
+        <h1 style="padding-top: 20px; padding-bottom: 30px; text-align: center;">Section-2</h1>
+        <div class="box31">
+            <div class="box4">
+                 <p>Main Content</p>
+            </div>
+            <div class="box5">
+                <div class="box50">
+                   <p>Section-1</p>
+                </div >
+                <div class="box50">
+                    <p>Section-2</p>
+                </div>
+                <div class="box50">
+                    <p>Section-3</p>
+                </div>
+            </div>
+        </div>
+        <h1 style="padding-top: 20px; padding-bottom: 30px; text-align: center;">Section-3</h1>
+        <div class="box6">
+            <div class="box60">
+                <img src="./Images/redcircle.png">
+                </div>
+                <div class="box60">
+                <img src="./Images/redcircle.png">
+                </div>
+                <div class="box60">
+                <img src="./Images/redcircle.png">
+                </div>
+                <div class="box60">
+                <img src="./Images/redcircle.png">
+                </div>
+        </div>
+        <div class="box7">
+              <p>Footer</p>
+        </div>
+    </div>
 </body>
 </html>

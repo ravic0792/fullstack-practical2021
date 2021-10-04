@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Page Layout</title>
+    <style>
+        *{
+            margin: 0;
+            padding:0;
+            box-sizing: border-box;
+        }
+        .box1 h3{
+            width: 100%;
+            height: 100px;
+            background-color: gray;
+            text-align: center;
+            padding-top: 40px;
+            border: 2px solid green;
+        }
+        .box2{
+            display: inline-flex;
+            margin-left: 300px;
+            
+        }
+        
+        .box2 img{
+            width: 200px;
+            padding-left: 60px;
+            
+        }
+        .container{
+            display: inline-flex;
+
+        }
+        .box3{
+           width: 400px;
+           height: 300px;
+           text-align: center;
+           background-color: gray;
+        }
+        .box41{
+            width:  1000px;
+           height: 100px;
+           background-color: yellow;
+           border: 2px solid green;
+           margin-top: 5px;
+           text-align: center;
+        }
+        .box42{
+            width: 1000px;
+           height: 100px;
+           background-color: yellow;
+           border: 2px solid green;
+           margin-top: 5px;
+           text-align: center;
+        }
+        .box43{
+            width: 1000px;
+           height: 100px;
+           background-color: yellow;
+           border: 2px solid green;
+           margin-top: 5px;
+           text-align: center;
+        }
+        
+        
+    </style>
+
+</head>
+<body>
+<div  class="box1" >
+    <h3>Header</h3>
+</div>
+<h1 style="margin-top: 20px;margin-bottom: 30px;text-align: center; font-size: 40px;">Section-1</h1>
+
+<div class="box2">
+    <div class="Images">
+        <img src="./Images/redcircle.png" alt=""/>
+    </div>
+    <div class="Images">
+        <img src="./Images/redcircle.png" alt=""/>
+    </div>
+    <div class="Images">
+        <img src="./Images/redcircle.png" alt=""/>
+    </div>
+    <div class="Images">
+        <img src="./Images/redcircle.png" alt=""/>
+    </div>
+</div>
+
+<h1 style="margin-top: 30px;margin-bottom: 20px;text-align: center; font-size: 40px;" >Section-2</h1>
+<div class="container">
+<div class="box3">
+      <p>Main Content</p>
+</div>
+<div class="box4">
+    <div class="box41">
+          <p>Aticle-1</p>
+    </div >
+    <div class="box42">
+        <p>Aticle-2</p>
+  </div>
+  <div class="box43" >
+    <p >Aticle-3</p>
+  </div>
+</div>
+</div>
+</body>
+</html>
