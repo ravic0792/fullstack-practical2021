@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Custom Price Table Template</title>
+    <style>
+        *{
+            padding: 0;margin: 0;box-sizing: border-box;
+        }
+        body{
+            min-width: 100%;
+            background-color: gray;
+        }
+        .wrapper{
+            width:600px;
+            background-color:#fff;
+            padding:10px;
+            margin: 20px auto;
+        }
+        tbody>tr>td>img{
+            width:10px;
+            height: 10px;
+        }
+        .custom-Table{
+            width: 100%;
+            margin: 0 auto;
+            border-collapse:collapse ;
+        }
+        .basic{
+            background-color: hotpink;
+        }
+        .plus{
+            background-color: rgb(140, 255, 105);
+        }
+        .delux{
+            background-color: rgb(105, 175, 255);
+        }
+        .pro{
+            background-color: rgb(255, 253, 105);
+        }
+        .custom-Table td,.custom-Table th{
+            width:150px;
+            padding: 8px 5px;
+            text-align: center;
+            border-right: 2px solid white;
+            border-left: 2px solid white;
+ 
+
+        }
+        .custom-Table th{
+            height: 70px;
+            color:grey;
+            font-size: 30px;
+
+        }
+        tbody tr:nth-child(odd)   {
+            background-color: #efefef;
+        }
+        tfoot tr{
+            line-height: 70px;
+        }
+        a{
+            text-decoration: none;
+            background-color: indigo;
+            padding: 10px 15px;
+            color:white;
+            border-radius:10px;
+            }
+            a:hover{
+                background-color: yellow;
+            }
+            h1{
+                text-align: center;
+                text-transform: uppercase;
+                margin-bottom: 10px;
+            }
+            tbody tr:first-child td{
+                font-size: 20px;
+                color: green;
+            }
+    </style>
+</head>
+<body>
+    <div class="wrapper">
+        <h1>Select Your Plan</h1>
+        <table class="custom-Table">
+            <colgroup class="basic"></colgroup>
+            <colgroup class="plus"></colgroup>
+            <colgroup class="delux"></colgroup>
+            <colgroup class="pro"></colgroup>
+            <thead>
+                <tr>
+                    <th>Basic</th>
+                    <th>Plus</th>
+                    <th>Delux</th>
+                    <th>Pro</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Rs. 500/-</td>
+                    <td>Rs. 1500/-</td>
+                    <td>Rs. 2500/-</td>
+                    <td>Rs. 3500/-</td>
+                </tr>
+                <tr>
+                    <td>50pages</td>
+                    <td>75pages</td>
+                    <td>Unlimited</td>
+                    <td>Unlimited</td> 
+                </tr>
+                <tr>
+                    <td>3users</td>
+                    <td>5users</td>
+                    <td>10users</td>
+                    <td>Unlimited</td> 
+                </tr>
+                <tr>
+                    <td>10Sites</td>
+                    <td>25Sites</td>
+                    <td>100sites</td>
+                    <td>Unlimited</td>
+                </tr>
+                <tr>
+                    <td>50MB</td>
+                    <td>250MB</td>
+                    <td>1GB</td>
+                    <td>5GB</td> 
+                </tr>
+                <tr>
+                    <td>included</td>
+                    <td>included</td>
+                    <td>included</td>
+                    <td>included</td> 
+                </tr>
+                <tr>
+                    <td><img src="./Images/greentick.jfif" alt=""></td>
+                    <td><img src="./Images/greentick.jfif" alt=""></td>
+                    <td><img src="./Images/greentick.jfif" alt=""></td>
+                    <td><img src="./Images/greentick.jfif" alt=""></td>
+                </tr>
+                <tr>
+                    <td><img src="./Images/crosssign.jfif" alt=""></td>
+                    <td><img src="./Images/greentick.jfif" alt=""></td>
+                    <td><img src="./Images/greentick.jfif" alt=""></td>
+                    <td><img src="./Images/greentick.jfif" alt=""></td> 
+                </tr>
+                <tr>
+                    <td><img src="./Images/crosssign.jfif"  alt=""></td>
+                    <td><img src="./Images/greentick.jfif" alt=""></td>
+                    <td><img src="./Images/greentick.jfif" alt=""></td>
+                    <td><img src="./Images/greentick.jfif" alt=""></td>
+                </tr>
+                <tr>
+                    <td><img src="./Images/crosssign.jfif" alt=""></td>
+                    <td><img src="./Images/crosssign.jfif" alt=""></td>
+                    <td><img src="./Images/greentick.jfif" alt=""></td>
+                    <td><img src="./Images/greentick.jfif" alt=""></td>
+                </tr>
+                <tr>
+                    <td><img src="./Images/crosssign.jfif" alt=""></td>
+                    <td><img src="./Images/crosssign.jfif" alt=""></td>
+                    <td><img src="./Images/crosssign.jfif" alt=""></td>
+                    <td><img src="./Images/greentick.jfif" alt=""></td> 
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <td><a herf="#">Sign Up</a></td>
+                    <td><a herf="#">Sign Up</a></td>
+                    <td><a herf="#">Sign Up</a></td>
+                    <td><a herf="#">Sign Up</a></td>
+                </tr>
+            </tfoot>
+        </table>
+  
+    </div>
+    
+</body>
+</html>

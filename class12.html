@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Navigation Bar</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/fontawesome.min.css" >
+    <style>
+        *{
+            padding:0;margin: 0;box-sizing: border-box;
+        }
+        .header{
+            width:100%;
+            height: 70px;
+            background-color: grey;
+            padding: 0 20px;
+
+        }
+        .header h2{
+            line-height: 70px;
+           float: left;
+            text-transform: uppercase;
+            color: white;
+        }
+       .header .menu{
+            
+            list-style: none;
+            float: right;
+            
+        }
+        .menu li{
+            display: inline-block;
+            line-height: 70px;
+        }
+        .menu li a{
+            text-decoration: none;
+            color: white;
+            font-size: 20px;
+            text-transform: uppercase;
+            padding: 0 20px;
+            transition: .4s;
+        }
+        .menu li a:hover, .show-btn:hover ,.hide-btn:hover{
+            color: skyblue;
+        }
+        .show-btn,.hide-btn{
+            font-size: 30px;
+            color: white;
+            line-height: 70px;
+            display: none;
+            transition: .4s;
+        }
+
+        .show-btn {
+            float: right;
+        }
+        #chk{
+            position: absolute;
+            visibility: hidden;
+            z-index: -10;
+        }
+        @media (max-width:800px) {
+            .show-btn ,.hide-btn
+           { display: block;}
+           .menu{
+               position: fixed;
+               top: 0;
+               right: -100%;/*slider Effect*/
+               width: 100%;
+               height: 100vh;
+               background-color: black;
+               text-align: center;
+               padding: 80px 0;
+               transition: .7s;
+               line-height: normal;
+           }
+           
+           #chk:checked ~ .menu{
+               right:0;
+           }
+           .menu li{
+               display: block;
+              
+           }
+           .menu li a{
+               display: block;
+           }
+           .hide-btn{
+               position: absolute;
+               right: 20px;
+               top:10px;
+           }
+        }
+    </style>
+</head>
+<body>
+  <div class="header">
+    <h2>Beta Labs</h2>
+    <input type="checkbox" id="chk">
+    <label for="chk" class="show-btn">
+        <i class="fa fa-bars" ></i>
+
+    </label>
+      <ul class ="menu">
+          
+          <li> <a href ="#">Home </a> </li>
+          <li><a href ="#"> About</a></li>
+          <li><a href ="#"> Services</a></li>
+          <li><a href ="#">Blog</a></li>
+          <li><a href ="#"> Contact</a></li>
+          <label for="chk" class="hide-btn">
+            <i class="fa fa-times" ></i>
+        </label>
+      </ul>
+  </div>
+  <div class="content">
+      <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Corporis, tempora id provident tempore sed modi illo vitae veritatis error dolores sunt asperiores maxime, quisquam ipsa tenetur non distinctio amet consectetur!</p>
+  </div>
+</body>
+</html>

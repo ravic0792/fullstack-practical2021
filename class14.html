@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        table{
+            border-collapse: collapse;
+            background-color: beige;
+        }
+        table,td,th,tr{
+            border:1px solid;
+            padding: 10px;
+            text-align: center;
+        }
+        th{
+            background-color: gray;
+            color: white;
+        }
+        tfoot tr {
+            background-color: lightgray !important;
+        }
+        caption{
+            caption-side: bottom;
+            color: red;
+        }
+        tr:nth-child(odd){
+            background-color: darkseagreen;
+        }
+    </style>
+</head>
+<body>
+    
+    <table width="800" align="center">
+        
+        <caption>
+            List of Courses
+        </caption>
+        <thead>
+            
+        <tr>
+            <th>
+                Course Name
+            </th>
+            <th width="100px">
+                Course Duration
+            </th>
+            <th>
+                CourseCost
+            </th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>
+                   Programming
+            </td>
+            <td>
+                2 Months
+            </td>
+            <td>
+                Rs. 5000
+            </td>
+        </tr>
+        <tr>
+            <td rowspan="2">
+                wed developement
+                <!-- <table align="center">
+                    <tr>
+                       <td>Front-End</td>
+                       <td>Back-End</td>
+                    </tr>
+                </table> -->
+         </td>
+         <td>
+             4 Months
+         </td>
+         <td>
+             Rs. 15000
+         </td>
+         </tr>
+         <tr>
+         
+        <td>
+         6 Months
+        </td>
+        <td>
+         Rs. 25000
+       </td>
+        </tr>
+    </tbody>
+    <tfoot>
+        <tr>
+           
+            <td colspan="2">
+                total cost
+            </td>
+            <td>
+                45000
+            </td>
+        </tr>
+    </tfoot>
+    </table>
+</body>
+</html>
