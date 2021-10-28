@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        .container{
+            width: 100%;
+            max-width: 1700px;
+            padding: 15px;
+
+        }
+        header{
+            width: 100%;
+            height: 80px;
+            background-color:skyblue ;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+       nav ul{
+           list-style: none;
+           
+       }
+       nav ul li{
+          display: inline-block;
+          
+         margin-left: 10px;
+       }
+       nav ul li a{
+           display: block;
+           text-decoration: none;
+           color: white;
+           padding: 10px,15px;
+           font-size: 18px;
+           text-transform: uppercase;
+       }
+       main{
+           width: 100%;
+
+       }
+       section.banner{
+           margin-top: 15px;
+           width: 100%;
+           background-color: grey;
+           height: 500px;
+          
+       }
+       section.sec-1{
+           margin-top: 15px;
+           display: flex;
+          
+          justify-content: space-evenly;
+         
+          align-items: center;
+       }
+       section.sec-1 .circle{
+             width: 200px;
+             height: 200px;
+             background-color: yellow;
+             border-radius: 50%;
+             display: inline-block;
+             
+       }
+       section.sec2
+       {
+         width:100%;
+       }
+       section.sec-2::after{
+           content: '';
+           display: block;
+           clear: both;
+       }
+       section.sec-2 article
+       {
+           margin-top: 15px;
+           float: left;
+           width:50%;
+           height:500px;
+           background-color: green;
+       }
+       section.sec-2 aside {
+           margin-top: 15px;
+           width:45%;
+           float:right;
+           height: 500px;
+           /* background-color: violet; */
+           display: flex;
+           flex-direction: column;
+       }
+       section.sec-2 aside .rightsidebar{
+           width: 100%;
+           background-color: red;
+           height: 30%;
+           margin-bottom: 5%;
+       }
+       section.sec-2  aside #lastsidebar
+       {
+              margin-bottom: 0px;
+       }
+       section.sec-3{
+             width: 100%;
+             display: flex;
+             height: 300px;
+             justify-content: space-evenly;
+             align-content: center;
+             margin-top: 15px;
+       }
+       section.sec-3 .grid{
+             width: 20%;
+             height: 100%;
+             background-color:rgb(59, 172, 206);
+            
+       }
+        footer{
+            margin-top: 15px;
+            width: 100%;
+            height: 80px;
+            background-color: brown;
+
+        }
+    </style>
+</head>
+<body>
+    
+    <div class="container">
+          <header>
+              <nav>
+                  <ul>
+                      <li><a href="#">Home</a></li>
+                      <li><a href="#">About</a></li>
+                      <li><a href="#">Services</a></li>
+                      <li><a href="#">Blog</a></li>
+                      <li><a href="#">Contact</a></li>
+                  </ul>
+              </nav>
+              
+          </header>
+          <main>
+              <section class="banner">
+
+              </section>
+              <section class="sec-1">
+                  <div class="circle"></div>
+                  <div class="circle"></div>
+                  <div class="circle"></div>
+                  <div class="circle"></div>
+            </section>
+            <section class="sec-2">
+                  <article>
+
+                  </article>
+                  <aside>
+                      <div class="rightsidebar"></div>
+                      <div class="rightsidebar"></div>
+                      <div class="rightsidebar" id="lastsidebar"></div>
+                  </aside>
+            </section>
+            <section class="sec-3">
+                  <div class="grid"></div>
+                  <div class="grid"></div>
+                  <div class="grid"></div>
+                  <div class="grid"></div>
+                  
+            </section>
+            
+          </main>
+          <footer>
+
+          </footer>
+
+    </div>
+    
+</body>
+</html>

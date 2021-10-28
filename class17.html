@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Element</title>
+</head>
+<body>
+    <form action="" method="post">
+        <label for="name">Name</label>
+        <input type="text" name="name" id="name" required/>
+        <label for="login">Login</label>
+        <input type="password" id="login" name="login" autofocus="autofocus" pattern="[A-Za-z]{@}[0-9]">
+        <label for="yes">multiline</label>
+        <textarea   name="multiline" id="yes" cols="30" rows="10">
+            jgadcbjsiuhiu
+            ahdjbaihjcnojad
+            jhbhjdbainjiv
+        </textarea>
+        <p>Hello</p>
+        <input type="submit" value="Submit">
+        <input type="radio" name="branch" value="cs" checked> cs
+        <input type="radio" name="branch" value="ce">ce
+        <input type="radio" name="branch" value="me">me
+        <input type="checkbox" name="musicalInstrument" value="guitre">guitre
+        <input type="checkbox" name="musicalInstrument" value="veena">veena
+        <input type="checkbox" name="musicalInstrument" value="dholak">dholak
+        <input type="checkbox" name="genre" value="punk" checked="checked" /> Punk
+        rock 
+        <input type="checkbox" name="genre" value="indie" checked="checked" />
+        Indie rock 
+        <input type="checkbox" name="genre" value="techno" />Techno
+        <input type="checkbox" name="genre" value="rockabilly" />Rockabilly
+        <input type="submit">
+        <input type="reset">
+        <select  name="xyz">
+            <option >jbhsdbh</option>
+            <option >mbajsbdj</option>
+            <option >jjsdb</option>
+            <option >jhjgd</option>
+        </select>
+        <select name="tuv"  size=3 multiple="multiple">
+            <option >hvsvj</option>
+            <option selected="selected">asjhdh</option>
+            <option selected="selected">jajgg</option>
+            <option>uewfghbnj</option>
+            <input type="file">
+
+            <input list="browsers" name="browser" />
+            <datalist id="browsers">
+              <option value="Internet Explorer"> </option>
+              <option value="Firefox"> </option>
+              <option value="Chrome"> </option>
+              <option value="Opera"> </option>
+              <option value="Safari"> </option>
+            </datalist>
+        </select>
+    </form>
+    
+</body>
+</html>

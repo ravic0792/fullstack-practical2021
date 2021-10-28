@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Creating Web Page Layout Using Div Tag</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .container{
+            width: 100%;
+            height: 100%;
+            border: 5px solid rgb(220, 220, 220);
+            font-size: 40px;
+            
+        }
+        .section1{
+               width: 100%;
+               background-color: gray;
+               height: 80px;
+               color: white;
+               margin: 10px;
+               justify-content: center;
+               align-items: center;
+            display: flex;
+            }
+        .section2{
+             width: 100%;
+             height: 500px;
+             background-color: rgb(132, 191, 230);
+             color: white;
+             margin: 10px;
+             justify-content: center;
+             align-items: center;
+            display: flex;
+        }
+        .section3{
+            display: flex;
+            justify-content: center;
+        }
+        .circle{
+              width: 300px;
+              height:300px;
+              background-color: goldenrod;
+              margin-left: 10px;
+              border-radius: 50%;
+        }
+        .section4{
+            display: flex;
+           
+        }
+        .part{
+            width: 50%;
+           height: 500px;
+           margin-right: 10px;
+           
+        }
+        #p1{
+            background-color: greenyellow;
+        }
+       .part21{
+        height:160px;
+        width: 100%;
+        background-color: chocolate;
+        margin-bottom: 10px;
+    }
+    .section5{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: 20px;
+    }
+    .rect{
+        width: 300px;
+        height: 500px;
+        background-color: red;
+        margin-right: 10px;
+    }
+     .section6{
+         width: 100%;
+         height: 90px;
+         background-color: pink;
+         margin-top: 10px;
+         color: white;
+         text-align: center;
+     }   
+    </style>
+</head>
+<body>
+    
+    <div class="container">
+        <div class="section1">
+               <p>Header</p>
+        </div>
+        <div class="section2">
+               <p>Banner</p>
+        </div>
+         <p style="text-align: center;">Section-1</p>
+        <div class="section3" >
+            <div class="circle" >
+
+            </div>
+            <div class="circle" >
+
+            </div>
+            <div class="circle">
+
+            </div>
+            <div class="circle" >
+
+            </div>
+           
+        </div>
+        <p style="text-align: center;">Section-2</p>
+        <div class="section4">
+              <div class="part" id="p1">
+                 
+              </div>
+              <div class="part">
+                  <div class="part21"></div>
+                  <div class="part21"></div>     
+                  <div class="part21"></div>
+
+              </div>
+        </div>
+        <p style="text-align: center;">Section</p>
+        <div class="section5">
+              <div class="rect"></div> 
+              <div class="rect"></div> 
+              <div class="rect"></div> 
+              <div class="rect"></div> 
+        </div>
+        <div class="section6">
+             <p>Footer</p>  
+        </div>
+        
+    </div>
+</body>
+</html>
