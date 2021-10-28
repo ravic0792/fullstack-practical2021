@@ -14,40 +14,51 @@
         .container{
             width: 100%;
             height: 100%;
-            border: 5px solid rgb(220, 220, 220);
-            font-size: 40px;
             
+            font-size: 40px;
+              
         }
         .section1{
+               position:fixed;
+               top: 0px;
                width: 100%;
                background-color: gray;
                height: 80px;
                color: white;
-               margin: 10px;
+               margin-left: 10px;
+               margin-right: 10px;
                justify-content: center;
                align-items: center;
-            display: flex;
+               display: inline-flex;
+               justify-content: space-evenly;
             }
+        .section1 a{
+            text-decoration: none;
+            color: white;
+        }
         .section2{
+           
              width: 100%;
-             height: 500px;
+             height: 900px;
              background-color: rgb(132, 191, 230);
              color: white;
              margin: 10px;
-             justify-content: center;
-             align-items: center;
-            display: flex;
+            font-size: 70px;
+            text-transform: uppercase;
         }
         .section3{
             display: flex;
             justify-content: center;
         }
         .circle{
-              width: 300px;
+              width: 700px;
               height:300px;
               background-color: goldenrod;
               margin-left: 10px;
-              border-radius: 50%;
+            border-radius: 50%;
+              justify-content: center;
+              align-items: center;
+            display: inline-flex; 
         }
         .section4{
             display: flex;
@@ -55,7 +66,7 @@
         }
         .part{
             width: 50%;
-           height: 500px;
+           height: 600px;
            margin-right: 10px;
            
         }
@@ -63,22 +74,30 @@
             background-color: greenyellow;
         }
        .part21{
-        height:160px;
+        height:190px;
         width: 100%;
-        background-color: chocolate;
-        margin-bottom: 10px;
+        border: solid 1px black;
+        margin-bottom: 15px;
     }
     .section5{
+        width: 100%;
+        height: 600px;
         display: flex;
         align-items: center;
         justify-content: center;
         margin-top: 20px;
+        
     }
     .rect{
         width: 300px;
         height: 500px;
         background-color: red;
         margin-right: 10px;
+        justify-content: center;
+        padding-left: 10px;
+         overflow: hidden; 
+         color: white;
+         font-size: 20px;
     }
      .section6{
          width: 100%;
@@ -88,54 +107,106 @@
          color: white;
          text-align: center;
      }   
+     .circle img{
+         height: 150px;
+         width: 150px;
+         
+     }
+     
+     
+     .rect img{
+        margin: 20px;
+        border-radius:10px;
+        height:90px;
+        width:260px;
+    
+     }
+    
+     .rect a{
+         width: 260px;
+         text-decoration: none;
+         justify-content: center;
+         align-items: center;
+         display: flex;
+         color: white;
+         background-color: blue;
+         border-radius: 10px;
+         margin-left: 20px;
+     }
+     .rect a:hover{
+         background-color: gold;
+     }
     </style>
 </head>
 <body>
     
-    <div class="container">
-        <div class="section1">
-               <p>Header</p>
+    <div class="container" id="reach_top">
+        <div class="section1"  >
+              
+               <a href="#">Home</a>
+               <a href="#about">About Us</a>
+               <a href="#team">Team Members</a>
+               <a href="#tech">Technology Used</a>
+               <a href="#contact">Contact</a>
+               
         </div>
-        <div class="section2">
-               <p>Banner</p>
+        <div class="section2" style="background-image: url(./Images/practical6.jpg); margin-top:80px;background-repeat: no-repeat; background-size: cover; background-position: center;">
+               <p>practical-8</p>
         </div>
-         <p style="text-align: center;">Section-1</p>
+         <p style="text-align: center;" id="team">Team Members</p>
         <div class="section3" >
             <div class="circle" >
-
+              <img src="./Images/8.1.jfif" alt="" >
             </div>
             <div class="circle" >
-
+                <img src="./Images/8.2.png" alt="">
             </div>
             <div class="circle">
-
+                <img src="./Images/8.3.png" alt="">
             </div>
             <div class="circle" >
-
+                <img src="./Images/8.4.jfif" alt="">
             </div>
            
         </div>
-        <p style="text-align: center;">Section-2</p>
-        <div class="section4">
+        <p style="text-align: center; font-size: 50px ; font-weight: bold;" id="about">About Us</p>
+        <div class="section4" >
               <div class="part" id="p1">
-                 
+                  <p style="color: white; font-size: 40px;">About Project</p>
+                 <p>consectetur adipisicing elit. Labore, ducimus tempora. Mollitia voluptate omnis quibusdam, aliquam repudiandae fugit blanditiis dicta explicabo porro beatae quod assumenda quisquam sapiente asperiores ex nobis qui doloremque deleniti modi provident, nulla nemo quas, odit adipisci libero.Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia eveniet in velit repellat animi, est nihil delectus commodi et vero maiores harum earum eaque dignissimos repudiandae corporis ipsam minima quia.</p>
               </div>
               <div class="part">
-                  <div class="part21"></div>
-                  <div class="part21"></div>     
-                  <div class="part21"></div>
+                  <div class="part21"> <img src="./Images/8.5.jpeg" alt="" width="100%" height="190px" ></div>
+                  <div class="part21"><img src="./Images/8.5.jpeg" alt="" width="100%"height="190px"></div>     
+                  <div class="part21"><img src="./Images/8.5.jpeg" alt="" width="100%"height="190px"></div>
 
               </div>
         </div>
-        <p style="text-align: center;">Section</p>
-        <div class="section5">
-              <div class="rect"></div> 
-              <div class="rect"></div> 
-              <div class="rect"></div> 
-              <div class="rect"></div> 
+        <p style="text-align: center; padding-top: 20px; font-weight: bold; font-size: 38px;" id="tech">Technology Used</p>
+        <div class="section5"> 
+              <div class="rect"> <img src="./Images/html-6.png" alt="" > <p>Introduction To HTML</p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident perspiciatis rem iste similique dignissimos explicabo deleniti necessitatibus mollitia accusantium doloremque numquam, ve eaque ipsa neque! Eos odit ullam ipsa, doloribus in quisquam repellat, numquam, veniam autem natus assumenda.Lorem ipsum dolor omnis reprehenderit vero dolor alias eaque architect error perspiciatis! 
+                <br/>
+                <a href="www.google.com"> Read More</a>
+            </div> 
+              <div class="rect"> <img src="./Images/css-6.png" alt=""> <p>Introduction To CSS</p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident perspiciatis rem iste similique dignissimos explicabo deleniti necessitatibus mollitia accusantium doloremque numquam, ve eaque ipsa neque! Eos odit ullam ipsa, doloribus in quisquam repellat, numquam, veniam autem natus assumenda.Lorem ipsum dolor omnis reprehenderit vero dolor alias eaque architect error perspiciatis!
+                <br/>
+                <a href="www.google.com"> Read More</a>
+                
+            </div> 
+              <div class="rect"><img src="./Images/jQuery-6.png" alt=""><p>Introduction To jQuery</p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident perspiciatis rem iste similique dignissimos explicabo deleniti necessitatibus mollitia accusantium doloremque numquam, ve eaque ipsa neque! Eos odit ullam ipsa, doloribus in quisquam repellat, numquam, veniam autem natus assumenda.Lorem ipsum dolor omnis reprehenderit vero dolor alias eaque architect error perspiciatis!
+                <br/>
+                <a href="www.google.com">Read More</a> 
+                
+            </div> 
+              <div class="rect"><img src="./Images/bootstrap-6.png" alt=""><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident perspiciatis rem iste similique dignissimos explicabo deleniti necessitatibus mollitia accusantium doloremque numquam, ve eaque ipsa neque! Eos odit ullam ipsa, doloribus in quisquam repellat, numquam, veniam autem natus assumenda.Lorem ipsum dolor omnis reprehenderit vero dolor alias eaque architect error perspiciatis!
+              <br/>
+                <a href="www.google.com">Read More</a>
+            </div> 
         </div>
+        <p style="font-size: 40px; text-align: center;" id="contact">Contact</p>
         <div class="section6">
-             <p>Footer</p>  
+             <p>Website Template for Practical-8:&copy;<a href="http://www.beta-labs.in" >Beta-Labs</a></p>  
+             <a href="#reach_top">top</a>
         </div>
         
     </div>
